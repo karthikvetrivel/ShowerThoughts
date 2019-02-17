@@ -1,0 +1,22 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+#displayedThought {
+    transition: 2s;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* text-align: center; */
+    color: black;
+    font-size: 30px;
+}
+
+#time {
+    padding: 20px;
+    float: right;
+    font-size: 20px;
+}
