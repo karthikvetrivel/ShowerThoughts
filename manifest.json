@@ -1,0 +1,10 @@
+{
+    "name": "Shower Thoughts",
+    "description": "New tab page that displays quotes from r/showerthoughts",
+    "version": "0.1",
+    "incognito": "split",
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+    },
+    "manifest_version": 2
+  }
