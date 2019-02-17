@@ -73,4 +73,8 @@ function getRandomInt(max) {
   }
   startTime();
 
+  // Setting the background color:
+  var backgroundColors = ["#ACDBC9", "#DBEBC2", "#FDD2B5", "#F7A7A6", "#F48B94, #E5EEC1", "#A2D4AB", "#3EACA8", "#F69A9A", "#F9CDAE", "#C8C8A9", "#83AE9B"]
+  document.body.style.backgroundColor = backgroundColors[getRandomInt(backgroundColors.length)]
+
 

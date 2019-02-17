@@ -4,11 +4,13 @@ body {
 }
 
 #displayedThought {
-    transition: 2s;
+    animation-name: example;
+    animation-duration: 3s;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 100;
     
     /* text-align: center; */
     color: black;
@@ -20,3 +22,9 @@ body {
     float: right;
     font-size: 20px;
 }
+
+@keyframes example {
+    from {opacity:0}
+    to {opacity:100}
+  }
+  
