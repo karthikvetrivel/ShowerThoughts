@@ -5,7 +5,7 @@ const DISPLAYED_TEXT = document.getElementById("displayedThought");
 request.open(
     "GET",
     "https://www.reddit.com/r/showerthoughts.json?limit=500",
-    true
+    true // json = true
 );
 request.onload = function() {
     var showerThoughtsJSON = JSON.parse(this.responseText);
@@ -61,11 +61,9 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById("time").innerHTML = h + ":" + m + ":" + s;
-    t = setTimeout(function() {
-        startTime();
-    }, 500);
 }
 startTime();
+setInterval(startTime, 500);
 
 // Setting the background color:
 var backgroundColors = [
