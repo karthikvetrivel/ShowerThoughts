@@ -7,6 +7,7 @@ request.open(
     "https://www.reddit.com/r/showerthoughts.json?limit=500",
     true // json = true
 );
+
 request.onload = function() {
     var showerThoughtsJSON = JSON.parse(this.responseText);
 
@@ -33,7 +34,7 @@ function generateRandomThought(showerThoughtsJSON) {
     DISPLAYED_TEXT.textContent = displayedThought;
 }
 
-// Functions for random use
+// Functions for periodic use.
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
@@ -44,13 +45,6 @@ function WordCount(str) {
 }
 
 // Generating the corner time
-
-function checkTime(i) {
-    if (i < 10) {
-        i = "0" + i;
-    }
-    return i;
-}
 
 function startTime() {
     var today = new Date();
