@@ -44,6 +44,13 @@ function WordCount(str) {
     return str.split(" ").length;
 }
 
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+
 // Generating the corner time
 
 function startTime() {
